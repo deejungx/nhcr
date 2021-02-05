@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<div class="main flex-container">
+    <h1 id="title-header">NHCR</h1>
+    <h3 id="title-subheader">Nepali Handwritten Character Recognition</h3>
+
+    <div class="app-container">
+
+    {{ dropzone.create(action='predict') }}
+    {# You can get the success response from server like this: #}
+    {{ dropzone.config(
+        custom_options="success: function(file, response)
+            { render_output(response); }"
+            ) 
+        }}
+
+    <div id="output-display">
+        <span>Predicted character: </span><p class="prediction" id="out1"></p>
+        <span>Pronounciation: </span><p class="prediction" id="out2"></p>
+        <span>Accuracy: </span><p class="prediction" id="out3"></p>
+    </div>
+
+    </div>
+
+</div>
+{% endblock %}

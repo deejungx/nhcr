@@ -1,0 +1,43 @@
+h1, h2, h3, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h1#title-header {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+h3#title-subheader {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 2px;
+}
+
+.app-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#output-display {
+    margin: 5%;
+}
+
+.dropzone {
+    margin: 5%;
+}
+
+p.prediction {
+    font-size: 24px;
+}

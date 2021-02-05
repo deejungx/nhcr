@@ -11,6 +11,12 @@ sklearn = "*"
 flask = "*"
 pillow = "*"
 opencv-python = "*"
+requests = "*"
+beautifulsoup4 = "*"
+lxml = "*"
+scikit-learn = "*"
+scikit-image = "*"
+flask-dropzone = "*"
 
 [dev-packages]
 
