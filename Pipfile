@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyter = "*"
+tensorflow-rocm = "*"
+matplotlib = "*"
+sklearn = "*"
+flask = "*"
+pillow = "*"
+opencv-python = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
